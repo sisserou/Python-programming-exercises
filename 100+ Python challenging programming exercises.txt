@@ -24,7 +24,7 @@ Write a program which will find all such numbers which are divisible by 7 but ar
 between 2000 and 3200 (both included).
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
-Hints: 
+Hints:
 Consider use range(#begin, #end) method
 
 Solution:
@@ -156,7 +156,7 @@ The output of the program should be:
 
 Hints:
 If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
-In case of input data being supplied to the question, it should be assumed to be a console input. 
+In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
 #!/usr/bin/env python
@@ -182,7 +182,7 @@ Example
 Suppose the following inputs are given to the program:
 3,5
 Then, the output of the program should be:
-[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]] 
+[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
 
 Hints:
 Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
@@ -225,7 +225,7 @@ print ','.join(items)
 Question 9
 Level 2
 
-Question£º
+Question:
 Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
 Suppose the following input is supplied to the program:
 Hello world
@@ -479,7 +479,7 @@ ABd1234@1
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solutions:
+Solution:
 import re
 value = []
 items=[x for x in raw_input().split(',')]
@@ -527,7 +527,7 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 We use itemgetter to enable multiple sort keys.
 
-Solutions:
+Solution:
 from operator import itemgetter, attrgetter
 
 l = []
@@ -567,7 +567,7 @@ for i in reverse(100):
 Question 21
 Level 3
 
-Question£º
+Question:
 A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and RIGHT with a given steps. The trace of robot movement is shown as the following:
 UP 5
 DOWN 3
@@ -616,7 +616,7 @@ Question 22
 Level 3
 
 Question:
-Write a program to compute the frequency of the words from the input. The output should output after sorting the key alphanumerically. 
+Write a program to compute the frequency of the words from the input. The output should output after sorting the key alphanumerically.
 Suppose the following input is supplied to the program:
 New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3.
 Then, the output should be:
@@ -632,7 +632,7 @@ choosing:1
 or:2
 to:1
 
-Hints
+Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
@@ -674,7 +674,7 @@ Question:
     Python has many built-in functions, and if you do not know how to use it, you can read document online or find some books. But Python has a built-in document function for every built-in functions.
     Please write a program to print some Python built-in functions documents, such as abs(), int(), raw_input()
     And add document for your own function
-    
+
 Hints:
     The built-in document method is __doc__
 
@@ -685,7 +685,7 @@ print raw_input.__doc__
 
 def square(num):
     '''Return the square value of the input number.
-    
+
     The input number must be integer.
     '''
     return num ** 2
@@ -709,7 +709,7 @@ Solution:
 class Person:
     # Define the class parameter "name"
     name = "Person"
-    
+
     def __init__(self, name = None):
         # self.name is the instance parameter
         self.name = name
@@ -729,7 +729,7 @@ Define a function which can compute the sum of two numbers.
 Hints:
 Define a function with two numbers as arguments. You can compute the sum in the function and return the value.
 
-Solution
+Solution:
 def SumFunction(number1, number2):
 	return number1+number2
 
@@ -743,12 +743,12 @@ Hints:
 
 Use str() to convert a number to string.
 
-Solution
+Solution:
 def printValue(n):
 	print str(n)
 
 printValue(3)
-	
+
 
 #----------------------------------------#
 Question:
@@ -758,7 +758,7 @@ Hints:
 
 Use str() to convert a number to string.
 
-Solution
+Solution:
 def printValue(n):
 	print str(n)
 
@@ -774,7 +774,7 @@ Hints:
 
 Use int() to convert a string to integer.
 
-Solution
+Solution:
 def printValue(s1,s2):
 	print int(s1)+int(s2)
 
@@ -792,7 +792,7 @@ Hints:
 
 Use + to concatenate the strings
 
-Solution
+Solution:
 def printValue(s1,s2):
 	print s1+s2
 
@@ -809,7 +809,7 @@ Hints:
 
 Use len() function to get the length of a string
 
-Solution
+Solution:
 def printValue(s1,s2):
 	len1 = len(s1)
 	len2 = len(s2)
@@ -820,7 +820,7 @@ def printValue(s1,s2):
 	else:
 		print s1
 		print s2
-		
+
 
 printValue("one","three")
 
@@ -836,13 +836,13 @@ Hints:
 
 Use % operator to check if a number is even or odd.
 
-Solution
+Solution:
 def checkValue(n):
 	if n%2 == 0:
 		print "It is an even number"
 	else:
 		print "It is an odd number"
-		
+
 
 checkValue(7)
 
@@ -858,14 +858,14 @@ Hints:
 Use dict[key]=value pattern to put entry into a dictionary.
 Use ** operator to get power of a number.
 
-Solution
+Solution:
 def printDict():
 	d=dict()
 	d[1]=1
 	d[2]=2**2
 	d[3]=3**2
 	print d
-		
+
 
 printDict()
 
@@ -885,13 +885,13 @@ Use dict[key]=value pattern to put entry into a dictionary.
 Use ** operator to get power of a number.
 Use range() for loops.
 
-Solution
+Solution:
 def printDict():
 	d=dict()
 	for i in range(1,21):
 		d[i]=i**2
 	print d
-		
+
 
 printDict()
 
@@ -909,14 +909,14 @@ Use ** operator to get power of a number.
 Use range() for loops.
 Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
 
-Solution
+Solution:
 def printDict():
 	d=dict()
 	for i in range(1,21):
 		d[i]=i**2
-	for (k,v) in d.items():	
+	for (k,v) in d.items():
 		print v
-		
+
 
 printDict()
 
@@ -933,14 +933,14 @@ Use ** operator to get power of a number.
 Use range() for loops.
 Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
 
-Solution
+Solution:
 def printDict():
 	d=dict()
 	for i in range(1,21):
 		d[i]=i**2
-	for k in d.keys():	
+	for k in d.keys():
 		print k
-		
+
 
 printDict()
 
@@ -957,13 +957,13 @@ Use ** operator to get power of a number.
 Use range() for loops.
 Use list.append() to add values into a list.
 
-Solution
+Solution:
 def printList():
 	li=list()
 	for i in range(1,21):
 		li.append(i**2)
 	print li
-		
+
 
 printList()
 
@@ -980,13 +980,13 @@ Use range() for loops.
 Use list.append() to add values into a list.
 Use [n1:n2] to slice a list
 
-Solution
+Solution:
 def printList():
 	li=list()
 	for i in range(1,21):
 		li.append(i**2)
 	print li[:5]
-		
+
 
 printList()
 
@@ -1004,13 +1004,13 @@ Use range() for loops.
 Use list.append() to add values into a list.
 Use [n1:n2] to slice a list
 
-Solution
+Solution:
 def printList():
 	li=list()
 	for i in range(1,21):
 		li.append(i**2)
 	print li[-5:]
-		
+
 
 printList()
 
@@ -1028,13 +1028,13 @@ Use range() for loops.
 Use list.append() to add values into a list.
 Use [n1:n2] to slice a list
 
-Solution
+Solution:
 def printList():
 	li=list()
 	for i in range(1,21):
 		li.append(i**2)
 	print li[5:]
-		
+
 
 printList()
 
@@ -1043,7 +1043,7 @@ printList()
 2.10
 
 Question:
-Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20 (both included). 
+Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20 (both included).
 
 Hints:
 
@@ -1052,13 +1052,13 @@ Use range() for loops.
 Use list.append() to add values into a list.
 Use tuple() to get a tuple from a list.
 
-Solution
+Solution:
 def printTuple():
 	li=list()
 	for i in range(1,21):
 		li.append(i**2)
 	print tuple(li)
-		
+
 printTuple()
 
 
@@ -1067,13 +1067,13 @@ printTuple()
 2.10
 
 Question:
-With a given tuple (1,2,3,4,5,6,7,8,9,10), write a program to print the first half values in one line and the last half values in one line. 
+With a given tuple (1,2,3,4,5,6,7,8,9,10), write a program to print the first half values in one line and the last half values in one line.
 
 Hints:
 
 Use [n1:n2] notation to get a slice from a tuple.
 
-Solution
+Solution:
 tp=(1,2,3,4,5,6,7,8,9,10)
 tp1=tp[:5]
 tp2=tp[5:]
@@ -1085,14 +1085,14 @@ print tp2
 2.10
 
 Question:
-Write a program to generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10). 
+Write a program to generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10).
 
 Hints:
 
 Use "for" to iterate the tuple
 Use tuple() to generate a tuple from a list.
 
-Solution
+Solution:
 tp=(1,2,3,4,5,6,7,8,9,10)
 li=list()
 for i in tp:
@@ -1108,13 +1108,13 @@ print tp2
 2.14
 
 Question:
-Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No". 
+Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No".
 
 Hints:
 
 Use if statement to judge condition.
 
-Solution
+Solution:
 s= raw_input()
 if s=="yes" or s=="YES" or s=="Yes":
     print "Yes"
@@ -1134,7 +1134,7 @@ Hints:
 Use filter() to filter some elements in a list.
 Use lambda to define anonymous functions.
 
-Solution
+Solution:
 li = [1,2,3,4,5,6,7,8,9,10]
 evenNumbers = filter(lambda x: x%2==0, li)
 print evenNumbers
@@ -1151,7 +1151,7 @@ Hints:
 Use map() to generate a list.
 Use lambda to define anonymous functions.
 
-Solution
+Solution:
 li = [1,2,3,4,5,6,7,8,9,10]
 squaredNumbers = map(lambda x: x**2, li)
 print squaredNumbers
@@ -1168,7 +1168,7 @@ Use map() to generate a list.
 Use filter() to filter elements of a list.
 Use lambda to define anonymous functions.
 
-Solution
+Solution:
 li = [1,2,3,4,5,6,7,8,9,10]
 evenNumbers = map(lambda x: x**2, filter(lambda x: x%2==0, li))
 print evenNumbers
@@ -1187,7 +1187,7 @@ Hints:
 Use filter() to filter elements of a list.
 Use lambda to define anonymous functions.
 
-Solution
+Solution:
 evenNumbers = filter(lambda x: x%2==0, range(1,21))
 print evenNumbers
 
@@ -1203,7 +1203,7 @@ Hints:
 Use map() to generate a list.
 Use lambda to define anonymous functions.
 
-Solution
+Solution:
 squaredNumbers = map(lambda x: x**2, range(1,21))
 print squaredNumbers
 
@@ -1220,7 +1220,7 @@ Hints:
 
 Use @staticmethod decorator to define class static method.
 
-Solution
+Solution:
 class American(object):
     @staticmethod
     def printNationality():
@@ -1238,7 +1238,7 @@ American.printNationality()
 7.2
 
 Question:
-Define a class named American and its subclass NewYorker. 
+Define a class named American and its subclass NewYorker.
 
 Hints:
 
@@ -1266,7 +1266,7 @@ print aNewYorker
 7.2
 
 Question:
-Define a class named Circle which can be constructed by a radius. The Circle class has a method which can compute the area. 
+Define a class named Circle which can be constructed by a radius. The Circle class has a method which can compute the area.
 
 Hints:
 
@@ -1292,8 +1292,10 @@ print aCircle.area()
 #----------------------------------------#
 
 7.2
+Question:
 
-Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area. 
+
+Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area.
 
 Hints:
 
@@ -1318,6 +1320,8 @@ print aRectangle.area()
 #----------------------------------------#
 
 7.2
+Question:
+
 
 Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as argument. Both classes have a area function which can print the area of the shape where Shape's area is 0 by default.
 
@@ -1353,6 +1357,7 @@ print aSquare.area()
 
 
 #----------------------------------------#
+Question:
 
 
 Please raise a RuntimeError exception.
@@ -1368,6 +1373,8 @@ raise RuntimeError('something wrong')
 
 
 #----------------------------------------#
+Question:
+
 Write a function to compute 5/0 and use try/except to catch the exceptions.
 
 Hints:
@@ -1390,6 +1397,8 @@ finally:
 
 
 #----------------------------------------#
+Question:
+
 Define a custom exception class which takes a string message as attribute.
 
 Hints:
@@ -1510,6 +1519,8 @@ unicodeString = u"hello world!"
 print unicodeString
 
 #----------------------------------------#
+Question:
+
 Write a program to read an ASCII string and to convert it to a unicode string encoded by utf-8.
 
 Hints:
@@ -2095,6 +2106,7 @@ for i in range(len(subjects)):
 
 
 #----------------------------------------#
+Question:
 Please write a program to print the list after removing delete even numbers in [5,6,77,45,22,12,24].
 
 Hints:
@@ -2200,6 +2212,7 @@ li=list(set1)
 print li
 
 #----------------------------------------#
+Question:
 
 With a given list [12,24,35,24,88,120,155,88,120,155], write a program to print this list after removing all duplicate values with original order reserved.
 
@@ -2349,10 +2362,10 @@ print list(itertools.permutations([1,2,3]))
 #----------------------------------------#
 Question:
 
-Write a program to solve a classic ancient Chinese puzzle: 
+Write a program to solve a classic ancient Chinese puzzle:
 We count 35 heads and 94 legs among the chickens and rabbits in a farm. How many rabbits and how many chickens do we have?
 
-Hint:
+Hints:
 Use for loop to iterate all possible solutions.
 
 Solution:
@@ -2371,5 +2384,3 @@ solutions=solve(numheads,numlegs)
 print solutions
 
 #----------------------------------------#
-
-
